@@ -1,3 +1,4 @@
+import PageLayout from '../components/PageLayout';
 import styles from '../styles/Page.module.css';
 
 const places = [
@@ -7,8 +8,7 @@ const places = [
 ];
 
 const Destinations = () => (
-  <section className={styles.page}>
-    <h1>Top Destinations</h1>
+  <PageLayout title="Top Destinations">
     <div className={styles.cards}>
       {places.map((place, index) => (
         <div key={index} className={styles.card}>
@@ -17,7 +17,7 @@ const Destinations = () => (
         </div>
       ))}
     </div>
-  </section>
+  </PageLayout>
 );
 
 export default Destinations;

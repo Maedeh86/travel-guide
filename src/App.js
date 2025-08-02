@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import Header from './components/header';
-import Footer from './components/footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Destinations from './pages/Destinations';
 import Tips from './pages/Tips';
 import layoutStyles from './styles/Layout.module.css';
-
-
-
 
 function App() {
   const [page, setPage] = useState('home');

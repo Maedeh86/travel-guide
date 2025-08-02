@@ -1,4 +1,4 @@
-import styles from '../styles/Layout.module.css';
+import styles from './Navigation.module.css';
 
 const Navigation = ({ onNavigate }) => (
   <nav className={styles.nav}>
@@ -7,4 +7,5 @@ const Navigation = ({ onNavigate }) => (
     <button onClick={() => onNavigate('tips')}>Travel Tips</button>
   </nav>
 );
+
 export default Navigation;
